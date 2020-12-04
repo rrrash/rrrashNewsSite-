@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+
+body{
+    background: #fffff0;
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+}
+.headlinks {
+    display: flex;
+    padding: 0 245px 10px;
+    font-size: 20px;
+
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+.headlinks a{
+    margin: 0 20px;
+    display: inline-block;
+    font-size: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+.main-text h1{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold; /* жирный шрифт */
+    font-size: 40px;
+
+
+}
+.main-text p{
+ text-align: center;
+}
+#img-main{
+    width: 400px;
+    margin-left: 570px;   
+    padding-bottom: 20px; 
+}
+#maintext1,#con{
+    cursor: pointer;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 22px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: grey;
+    color: white;
+    padding: 24px 35px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 150px;
+    top: 50px;
+    width: 80%; /* Full width */
+    height: 80%; /* Full height */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color:#fffff0;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+
+.conctus{
+    text-align: center;
+
+
+}
+
+.nav {
+    float: left;
+  }
+  label {
+    margin: 40px 0 0 0;
+    font-size: 30px;
+    display: none;
+  }
+  #toggle {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+      .headlinks {
+        display: inline-block;
+        text-align: center;
+        padding: 50px 0 0 0;
+        margin-left: 140px;
+      }
+
+      .headlinks a {
+          border-bottom: 1px solid gray;
+          display:block;
+      }
+
+      label {
+          display: block;
+          cursor: pointer;
+          font-size: 40px;
+      }
+
+      .pic {
+          display: none;
+      }
+      /*loop*/
+      #toggle:checked + .headlinks {
+          display: none;
+      }
+
+      span.psw {
+          display: block;
+          float: none;
+      }
+      .modal{
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 50px;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        padding-top: 60px;
+      }
+      #img-main{
+          margin-left: 49px;
+      }
+      /*.main-img img {*/
+      /*    margin-left: -90px;*/
+      /*}*/
+
+      /*.main-text h1 {*/
+      /*    text-align: center;*/
+
+
+      /*}*/
+
+      /*.main-text p {*/
+      /*    margin-left: 80px;*/
+      /*    margin-top: 40px;*/
+
+      /*}*/
+      #map{
+        display: none;
+      }
+  }
+
+#map {
+    height: 300px;
+    width: 40%;
+    margin-left: 450px;
+    margin-bottom: 50px;
+}
+
